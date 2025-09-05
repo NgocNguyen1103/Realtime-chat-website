@@ -1,0 +1,2 @@
+res.cookie: When you call res.cookie() in Express.js, you are telling the server to attach a Set-Cookie header to the HTTP response.
+

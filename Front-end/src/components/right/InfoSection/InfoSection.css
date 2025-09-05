@@ -1,0 +1,190 @@
+.info-section {
+  background-color: white;
+  width: 355px;
+  height: 806px;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+  overflow-y: auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.status {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+.action-btn img {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.action-btn img:hover {
+  background-color: #e0e0e0;
+}
+
+.action-btn p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.options li,
+.sub-options li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  border: none;
+}
+
+.options li:hover,
+.sub-options li:hover {
+  background-color: #d2b48c;
+}
+
+.options li .arrow,
+.sub-options li .arrow {
+  margin-left: auto; 
+  font-size: 14px;
+  color: black;
+}
+
+.sub-options {
+  list-style: none;
+}
+
+.sub-options li img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.members {
+  list-style: none;
+  padding: 0;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #3e3b3b;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.member-item:hover {
+  background-color: #505050;
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.member-info {
+  flex-grow: 1;
+}
+
+.member-info p {
+  margin: 0;
+}
+
+.admin,
+.add {
+  flex-grow: 1;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px 0;
+}
+
+.modal-body input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+.Login-navbar {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.login-nav-logo img {
+    width: 180px;
+    margin-left: 170px;
+}
+
+.login-nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 85px;
+    font-weight: 600;
+    list-style: none;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.login-nav-li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.login-nav-li hr {
+    height: 2px;
+    background: #007BFF;
+    border: 0;
+    border-radius: 25px;
+}
+
+.login-nav-menu a {
+    color: inherit;
+}
+
+.login-nav-li:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+
+
+.login-nav-li:active {
+    color: #0062cb;
+}

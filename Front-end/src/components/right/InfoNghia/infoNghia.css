@@ -1,0 +1,180 @@
+.sidebar {
+    width: 330px !important; 
+    background-color: white; 
+    color: black; 
+    height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 80px;
+  }
+
+.sidebar__profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.profile__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+.profile__name {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  }
+  
+.status {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+.profile__actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+.profile__action-button {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  }
+
+.profile__action-button img {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+  /* Tiêu đề mỗi mục */
+  .menu__section {
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+  }
+  
+  .menu__section-title {
+    color: #000; 
+    margin-bottom: 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .menu__section-title:hover {
+    background-color: #d2b48c; 
+  }
+
+
+  .arrow {
+    margin-left: 10px; 
+    font-size: 14px; 
+    color: black;
+    transform: translateY(-2px);
+  }
+  
+  
+  /* Các mục trong menu */
+  .menu__item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    border: none;
+  }
+
+  .menu__item:hover {
+    background-color: #d2b48c;
+  }
+
+  .menu__item img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  
+  .modal-body {
+    padding: 20px 0;
+  }
+  
+  .modal-body input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  

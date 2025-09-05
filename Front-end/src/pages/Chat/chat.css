@@ -1,0 +1,49 @@
+.main-layout-chat {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 17px;
+    background: #f4f4f4;
+
+    .user-status {
+        background: rgb(40, 232, 56);
+        width: 17px;
+        height: 17px;
+        border: solid 3px white;
+        border-radius: 50%;
+        margin-top: 25px;
+        margin-left: -33px;
+    }
+
+    .infor-status {
+        position: sticky;
+        background: rgb(40, 232, 56);
+        width: 20px;
+        height: 20px;
+        border: solid 3px white;
+        border-radius: 50%;
+        margin-top: -20px;
+        margin-left: 176px;
+    }
+
+    .left-status {
+        background: rgb(40, 232, 56);
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        border: solid 3px white;
+        border-radius: 50%;
+        margin-top: 25px;
+        margin-left: 28px;
+    }
+
+
+
+    /* .chat-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    } */
+
+}

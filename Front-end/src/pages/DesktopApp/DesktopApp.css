@@ -1,0 +1,58 @@
+.desk-app {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 100px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.desk-app .desk-desc {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.desk-app .desk-title {
+    background-clip: text;
+    background: linear-gradient(83.84deg, #007BFF -8.87%, #33c2ff 6.54%, #50fffc 58.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.desk-app .desk-content {
+    font-size: 17px;
+    color: rgb(57, 57, 57);
+    margin-bottom: 10px;
+}
+
+.desk-app .down-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background: #eeeeee;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.desk-app .win-img {
+    width: 25px;
+    height: fit-content;
+}
+
+.desk-app .down-btn:active {
+    background: #d1d1d1;
+}
+
+.desk-app .laptop-img {
+    width: 800px;
+    height: fit-content;
+}

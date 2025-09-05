@@ -1,0 +1,269 @@
+.privacy {
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    margin-bottom: 20px;
+}
+
+.privacy-slogan {
+    padding-left: 170px;
+    padding-right: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.privacy-slogan p {
+    background-clip: text;
+    background: linear-gradient(83.84deg, #007BFF -8.87%, #33c2ff 6.54%, #50fffc 58.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-weight: 600;
+
+}
+
+.privacy-slogan img {
+    width: 550px;
+    height: fit-content;
+    border: 4px solid #33c2ff;
+    border-radius: 25px;
+
+}
+
+.privacy-connect {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-connect-title {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(31, 31, 31);
+}
+
+.privacy-connect-content {
+    width: 950px;
+    font-size: 19px;
+    color: #818181;
+}
+
+.privacy-connect-img {
+    width: 350px;
+    height: fit-content;
+}
+
+.privacy hr {
+    width: 800px;
+    height: 3px;
+    background: #33c2ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+.privacy-personal {
+    display: flex;
+    flex-direction: row;
+    padding-right: 170px;
+    gap: 80px;
+    align-items: center;
+
+
+}
+
+.privacy-personal img {
+    width: 750px;
+    height: fit-content;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: #33c2ff solid 4px;
+    border-left: 0;
+
+}
+
+.privacy-personal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.personal-title {
+    font-size: 65px;
+    font-weight: 500;
+
+}
+
+.personal-content {
+    font-size: 18px;
+    color: #676767;
+    width: 480px;
+}
+
+.personal-more {
+
+    width: 130px;
+    height: 50px;
+    background: #007BFF;
+    font-size: 16px;
+    color: white;
+    border-radius: 25px;
+    border: 0;
+    font-weight: 500;
+}
+
+.design-safety {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.design-safety-title {
+    color: #747474;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.design-safety-desc {
+    font-size: 30px;
+    text-align: center;
+}
+
+.design-safety-content {
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    align-items: center;
+}
+
+.design-safety-content .content-title {
+    color: #747474;
+}
+
+.design-safety .content-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1080px;
+
+}
+
+.design-safety .content-cards div {
+    width: 316px;
+    height: 426px;
+    background: #f9f9f9;
+    text-align: center;
+    padding: 60px 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    border-radius: 20px;
+    border: 3px solid #33c2ff
+}
+
+.design-safety .content-cards .card-title {
+    font-weight: 600;
+    font-size: 27px;
+
+}
+
+.design-safety .content-cards .card-content {
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.keep-safe {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .keep-safe-title {
+        color: #747474;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .keep-safe-desc {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .keep-safe-content {
+        display: flex;
+        flex-direction: column;
+        gap: 95px;
+        align-items: center;
+
+
+        .content-title {
+            color: #747474;
+            text-align: center;
+        }
+
+        .content-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            div {
+                padding: 20px 60px;
+                width: 705px;
+                height: 287px;
+                background: #f8f8f8;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                border-radius: 25px;
+
+                .card-title {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    height: fit-content;
+                    width: fit-content;
+
+                    img {
+                        width: 24px;
+                        height: 23px;
+                    }
+
+                    p {
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+
+                }
+
+                .card-content {
+                    padding-left: 32px;
+                    font-size: 17px;
+                    line-height: 1.8;
+                    color: #747474;
+                }
+            }
+        }
+    }
+
+}

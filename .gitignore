@@ -1,0 +1,56 @@
+# ========================================
+# Node.js / Backend
+# ========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+*.out
+*.err
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by testing tools
+coverage/
+
+# Build directories
+dist/
+build/
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ========================================
+# React / Frontend
+# ========================================
+# dependencies
+Front-end/node_modules/
+
+# build
+Front-end/build/
+Front-end/dist/
+
+# misc
+Front-end/.env
+Front-end/.env.local
+Front-end/.env.*.local

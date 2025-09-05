@@ -1,0 +1,31 @@
+.main-layout {
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 426px;
+
+
+}
+
+.side-nav {
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  width: 50px;
+  height: 100%;
+  background-color: white;
+
+  margin-left: 10px;
+}
+
+.chat-listt {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+
+  /* width: 361px;   */
+  background-color: white;
+
+}

@@ -1,0 +1,17 @@
+.main_merge_ngoc {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 17px;
+    background: #f4f4f4;
+
+
+
+    .merge_ngoc {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+}

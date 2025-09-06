@@ -6,10 +6,33 @@ import microsoft from '../../assets/microsoft.png'
 
 import { Link, Route, Routes } from 'react-router-dom'
 import Sign_up from '../Sign_up/Sign_up'
+import axios from 'axios'
+import { login } from '../../../../Back-end/controllers/authController'
 
 const Login = () => {
 
-    const [login, setLogin] = useState("")
+    const [formData, setFormData] = useState({
+        email: "",
+        password: ""
+    }
+    )
+
+    const handleChange = (e) =>{
+        const {name, value} = e.target;
+        setFormData(prev => ({...prev, [name]: value}))
+    }
+
+    const handleSubmit = async (e) =>{
+        try{
+            const res = await axios.post("http://localhost:4000/api/auth/register", formData, {
+                withCredentials: true,
+            })
+            console.log();
+            
+        } catch{
+            
+        }
+    }
 
     return (
         <div>

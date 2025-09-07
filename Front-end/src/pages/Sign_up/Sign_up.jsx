@@ -2,10 +2,12 @@ import React from 'react'
 import './Sign_up.css'
 import axios from "axios"
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const Sign_up = () => {
 
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -20,6 +22,7 @@ const Sign_up = () => {
 
         const { name, value, type, checked } = e.target;
         setFormData(prev => ({ ...prev, [name]: type === 'checkbox' ? checked : value, }));
+        console.log(formData);
 
 
     }
@@ -34,6 +37,7 @@ const Sign_up = () => {
                 });
                 console.log("Registed Successful", res.data);
                 alert("Register successfully");
+                navigate("/")
             } else {
                 alert("Please agree with the policy")
             }

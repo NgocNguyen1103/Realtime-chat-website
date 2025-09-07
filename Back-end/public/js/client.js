@@ -1,5 +1,3 @@
-
-
 const socket = io("https://31b19d1565fd.ngrok-free.app")
 
 const id_room = document.getElementById("id_room");

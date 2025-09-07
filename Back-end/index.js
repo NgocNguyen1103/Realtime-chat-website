@@ -17,7 +17,11 @@ const port = 4000;
 app.set("view engine", "ejs");
 app.set("views", "./views");
 app.use(express.static("public"))
-app.use(cors());
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true
+}
+));
 app.use(cookieParser());
 app.use(express.json()); // parse application/json
 app.use(express.urlencoded({ extended: true })); // parse HTML form

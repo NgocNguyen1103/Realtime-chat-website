@@ -4,9 +4,9 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
 export const register = async (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, gender, dob } = req.body;
 
-    if (!name || !email || !password) {
+    if (!name || !email || !password || !gender || !dob) {
         return res.status(400).json({ success: false, message: "Missing data" });
     }
 
@@ -16,7 +16,7 @@ export const register = async (req, res) => {
             return res.status(409).json({ success: false, message: "Email already exists" });
         }
         const hash_password = await bcrypt.hash(password, 10);
-        const user = new userModel({ user_name: name, email, password: hash_password, avatarUrl: process.env.DEFAULT_AVATAR_URL });
+        const user = new userModel({ user_name: name, email, password: hash_password, gender, dob, avatarUrl: process.env.DEFAULT_AVATAR_URL });
         await user.save();
 
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
